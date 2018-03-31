@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1.title= title
+        form.form
+            input.form__input.form__input--question(type='text', name='Question', placeholder='Ask a question')
+            input.form__input.form__input--answer1(type='text', name='Answer1', placeholder='Answer 1')
+            input.form__input.form__input--answer2(type='text', name='Answer2', placeholder='Answer 2')
+            input.form__input.form__input--ask(type='submit', name='ask', value='ask')
