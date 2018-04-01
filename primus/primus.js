@@ -13,9 +13,10 @@ exports.kickstart = function(server){
     primus.on('connection', function(spark){
        console.log('Spark connected');
         
-        //in connectie data wegscrhijven
+        //doe iets als je data krijgt van client
         spark.on('data', function(data){
-           primus.write(data); 
+            console.log("data from spark", data);
+           primus.write({data}); 
         });
     });
 }
